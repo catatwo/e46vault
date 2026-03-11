@@ -107,3 +107,22 @@
   background: var(--success-bg);
   color: var(--success);
 }
+
+/* ===== Mobile Responsiveness ===== */
+@media (max-width: 30em) {
+  .hero-section h1 {
+    font-size: 1.75em;
+  }
+
+  .hero-section .tagline {
+    font-size: 1em;
+  }
+
+  .section-overview {
+    grid-template-columns: 1fr;
+  }
+
+  .section-card {
+    padding: 1em;
+  }
+}

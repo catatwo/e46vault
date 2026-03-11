@@ -328,3 +328,58 @@
   margin: 0 0.3em;
   color: var(--warning);
 }
+
+/* ===== Mobile Responsiveness ===== */
+
+/* Ensure all content tables scroll horizontally on small screens */
+.sl-markdown-content table {
+  min-width: 100%;
+}
+
+@media (max-width: 30em) {
+  /* Tighter padding on all markdown tables */
+  .sl-markdown-content th,
+  .sl-markdown-content td {
+    padding: 0.4em 0.5em;
+    font-size: 0.9em;
+  }
+  /* Allow part numbers and torque values to wrap on small screens */
+  .part-number,
+  .torque-spec {
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  /* Smaller table text and padding */
+  .part-number-table,
+  .torque-spec-table,
+  .fluid-capacity-table {
+    font-size: 0.82em;
+  }
+
+  .part-number-table th,
+  .torque-spec-table th,
+  .fluid-capacity-table th,
+  .part-number-table td,
+  .torque-spec-table td,
+  .fluid-capacity-table td {
+    padding: 0.4em 0.5em;
+  }
+
+  /* Filter input should not exceed viewport */
+  .table-filter input {
+    max-width: 100%;
+  }
+
+  /* Tighter card grid */
+  .card-grid {
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+
+  /* Smaller callout padding */
+  .warning-callout,
+  .tool-list {
+    padding: 0.75em 1em;
+  }
+}

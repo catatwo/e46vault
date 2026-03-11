@@ -6,7 +6,7 @@ const currentYear = 2026;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
-<footer class="e46-footer">
+<footer class="e46-footer" id="e46-footer-main">
   <div class="e46-footer-inner">
     <nav class="e46-footer-nav" aria-label="Footer navigation">
       <div class="e46-footer-col">
@@ -125,3 +125,30 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
     margin: 0;
   }
 </style>
+
+<script>
+  // Ensure single footer positioned correctly
+  document.addEventListener('DOMContentLoaded', () => {
+    const mainFooter = document.getElementById('e46-footer-main');
+    const pageDiv = document.querySelector('.page');
+    
+    if (mainFooter && pageDiv) {
+      // Remove any duplicate footers (keep only the first one with our ID)
+      const allFooters = document.querySelectorAll('.e46-footer');
+      allFooters.forEach((footer, index) => {
+        if (footer !== mainFooter) {
+          footer.remove();
+        }
+      });
+      
+      // Move the footer to be a direct child of .page div for full width
+      pageDiv.appendChild(mainFooter);
+      
+      // Update styling to ensure full width positioning
+      mainFooter.style.position = 'relative';
+      mainFooter.style.width = '100%';
+      mainFooter.style.marginLeft = '0';
+      mainFooter.style.marginRight = '0';
+    }
+  });
+</script>

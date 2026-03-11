@@ -11,6 +11,9 @@ export default defineConfig({
 		starlight({
 			title: 'E46 Vault',
 			description: 'The encyclopedic reference for the BMW E46 330Ci and 330i (1999-2006)',
+			components: {
+				Footer: './src/components/Footer.astro',
+			},
 			social: [
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/catatwo/e46vault' },
 			],

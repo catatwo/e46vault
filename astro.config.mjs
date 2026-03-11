@@ -17,6 +17,9 @@ export default defineConfig({
 			editLink: {
 				baseUrl: 'https://github.com/catatwo/e46vault/edit/master/',
 			},
+			components: {
+				Footer: './src/components/Footer.astro',
+			},
 			customCss: [
 				'./src/styles/custom.css',
 				'./src/styles/e46-theme.css',

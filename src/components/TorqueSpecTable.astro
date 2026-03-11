@@ -1,0 +1,62 @@
+---
+import torqueData from '../data/torque-specs.json';
+
+interface Props {
+  group?: string;
+}
+const { group } = Astro.props;
+
+const groups = group
+  ? torqueData.groups.filter((g) => g.name === group)
+  : torqueData.groups;
+---
+<div class="table-filter">
+  <input type="text" placeholder="Filter torque specs..." id="torque-filter" />
+</div>
+
+{groups.map((g) => (
+  <div>
+    <h4>{g.name}</h4>
+    <table class="torque-spec-table" data-filterable>
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>Torque</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        {g.specs.map((spec) => (
+          <tr>
+            <td>{spec.component}</td>
+            <td>
+              {spec.unit === 'Nm' ? (
+                <span class="torque-spec">
+                  {spec.value}<span class="unit">Nm</span> ({Math.round(spec.value * 0.7376)}<span class="unit">ft-lb</span>)
+                </span>
+              ) : (
+                <span class="torque-spec">
+                  {spec.value}<span class="unit">°</span>
+                </span>
+              )}
+            </td>
+            <td>{spec.notes}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+))}
+
+<script>
+  const input = document.getElementById('torque-filter') as HTMLInputElement;
+  if (input) {
+    input.addEventListener('input', () => {
+      const filter = input.value.toLowerCase();
+      document.querySelectorAll('.torque-spec-table tbody tr').forEach((row) => {
+        const text = (row as HTMLElement).textContent?.toLowerCase() || '';
+        (row as HTMLElement).style.display = text.includes(filter) ? '' : 'none';
+      });
+    });
+  }
+</script>

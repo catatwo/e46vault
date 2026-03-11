@@ -1,0 +1,33 @@
+---
+title: EWS (Electronic Immobilizer)
+description: EWS III electronic immobilizer system for the BMW E46 — anti-theft and key authentication.
+sidebar:
+  order: 2
+---
+
+The EWS is BMW's electronic immobilizer system that prevents the engine from starting without an authorized key.
+
+## How It Works
+
+1. Key is inserted into ignition
+2. EWS module reads the transponder chip in the key head
+3. EWS authenticates the key ISN (Individual Serial Number)
+4. EWS sends start-enabled signal to DME via rolling code
+5. DME enables fuel injection and ignition
+
+## Components
+
+- **EWS module**: Located behind the glove box
+- **Key transponder**: Passive chip in the key head
+- **Ring antenna**: Around the ignition lock cylinder
+- **DME link**: EWS and DME share aligned ISN codes
+
+## Common Issues
+
+- EWS/DME alignment lost (engine cranks but won't start, EWS light on)
+- Key transponder failure (intermittent no-start)
+- Ring antenna failure (EWS can't read key)
+
+## Key Information
+
+The E46 can store up to 10 keys. Lost key situations require EWS-DME realignment using BMW dealer tools or specialized aftermarket tools.

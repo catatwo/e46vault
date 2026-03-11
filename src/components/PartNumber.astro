@@ -1,0 +1,16 @@
+---
+interface Props {
+  number: string;
+  superseded?: string;
+}
+const { number, superseded } = Astro.props;
+---
+{superseded ? (
+  <span>
+    <span class="part-number superseded">{superseded}</span>
+    <span class="superseded-arrow">→</span>
+    <span class="part-number">{number}</span>
+  </span>
+) : (
+  <span class="part-number">{number}</span>
+)}

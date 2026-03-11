@@ -1,0 +1,35 @@
+---
+title: Electrical System Overview
+description: Overview of the BMW E46 electrical architecture — modules, buses, and system design.
+sidebar:
+  order: 1
+---
+
+The E46 uses a distributed electrical architecture with multiple control modules communicating over CAN-bus and K-bus networks. Understanding this architecture is essential for diagnosing electrical issues.
+
+## Key Control Modules
+
+| Module | Abbreviation | Function |
+|--------|-------------|----------|
+| Digital Motor Electronics | DME (MS43) | Engine management |
+| Electronic Immobilizer | EWS | Anti-theft, key authentication |
+| General Module | GM/ZKE | Central body electronics |
+| Light Control Module | LCM | Exterior and interior lighting |
+| Light Switching Center | LSZ | Headlight switch module |
+| Instrument Cluster | IKE | Gauges, warning lights, trip computer |
+| IHKA | IHKA | Climate control |
+| ABS/DSC | ABS/DSC | Anti-lock brakes and stability |
+| EGS | EGS | Automatic transmission (if equipped) |
+| Rain/Light Sensor | RLS | Auto wipers and headlights |
+
+## Communication Buses
+
+- **CAN-bus (high speed)**: DME, EGS, ABS/DSC, instrument cluster — 500 kbit/s
+- **K-bus (low speed)**: Body electronics (GM, LCM, IHKA, radio) — 9.6 kbit/s
+- **D-bus (diagnostic)**: OBD-II port to gateway module
+
+## Battery and Charging
+
+- **Battery**: 80Ah, located in trunk (right side)
+- **Alternator**: 120A (Bosch)
+- **System voltage**: 12V nominal, ~14.2V with engine running

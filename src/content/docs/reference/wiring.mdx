@@ -1,0 +1,44 @@
+---
+title: Wiring Reference
+description: Wiring color codes and connector pin-outs for BMW E46
+sidebar:
+  order: 7
+---
+
+# Wiring Reference
+
+## BMW Standard Wire Color Codes
+
+BMW uses a consistent wire color coding system across models:
+
+| Color | Abbreviation | Typical Use |
+|-------|-------------|-------------|
+| Red | RT | Ignition-switched power (KL15) |
+| Green | GN | Battery-direct power (KL30) |
+| Brown | BR | Ground |
+| Blue | BL | Signal/data wires |
+| Yellow | GE | Lighting circuits |
+| White | WS | Various signals |
+| Gray | GR | CAN-bus high |
+| Black | SW | CAN-bus low, ground |
+| Violet | VI | Sensor signals |
+
+## CAN-Bus System
+
+The E46 uses K-Bus (body) and D-Bus (diagnostic) networks:
+- **K-Bus**: Body electronics (doors, windows, IHKA, radio) — single wire
+- **D-Bus**: Diagnostic communication — OBD-II port
+- **PT-CAN** (later models): Powertrain CAN for DME/transmission
+
+## OBD-II Pin-Out
+
+| Pin | Function |
+|-----|----------|
+| 2 | J1850 Bus+ |
+| 4 | Chassis Ground |
+| 5 | Signal Ground |
+| 6 | CAN High (ISO 15765) |
+| 7 | K-Line (ISO 9141-2) |
+| 8 | K-Line (BMW specific) |
+| 14 | CAN Low (ISO 15765) |
+| 16 | Battery Power |

@@ -1,0 +1,109 @@
+/* E46 Vault - Extended Theme Tokens */
+
+/* Hero section styles for splash pages */
+.hero-section {
+  text-align: center;
+  padding: 2em 0;
+}
+
+.hero-section h1 {
+  font-size: 2.5em;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--bmw-blue), var(--bmw-blue-light));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-section .tagline {
+  font-size: 1.2em;
+  opacity: 0.8;
+  margin-top: 0.5em;
+}
+
+/* Section overview cards */
+.section-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1em;
+  margin: 1.5em 0;
+}
+
+.section-card {
+  border: 1px solid color-mix(in srgb, var(--sl-color-text) 12%, transparent);
+  border-radius: 8px;
+  padding: 1.25em;
+  transition: all 0.2s;
+}
+
+.section-card:hover {
+  border-color: var(--bmw-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.section-card h3 {
+  margin: 0 0 0.5em;
+  color: var(--bmw-blue);
+}
+
+.section-card p {
+  margin: 0;
+  font-size: 0.92em;
+  opacity: 0.85;
+}
+
+/* Procedure step styling */
+.procedure-steps {
+  counter-reset: step;
+}
+
+.procedure-steps > li {
+  counter-increment: step;
+  position: relative;
+  padding-left: 0.5em;
+  margin-bottom: 1em;
+}
+
+.procedure-steps > li::marker {
+  content: "Step " counter(step) ". ";
+  font-weight: 700;
+  color: var(--bmw-blue);
+}
+
+/* Comparison table */
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.comparison-table .highlight {
+  background: color-mix(in srgb, var(--success) 8%, transparent);
+  font-weight: 600;
+}
+
+/* Status badges */
+.status-badge {
+  display: inline-block;
+  font-size: 0.78em;
+  font-weight: 600;
+  padding: 0.2em 0.5em;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.status-badge.common {
+  background: var(--danger-bg);
+  color: var(--danger);
+}
+
+.status-badge.occasional {
+  background: var(--warning-bg);
+  color: var(--warning);
+}
+
+.status-badge.rare {
+  background: var(--success-bg);
+  color: var(--success);
+}

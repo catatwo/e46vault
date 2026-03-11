@@ -1,0 +1,16 @@
+---
+interface Props {
+  tools: string[];
+}
+const { tools } = Astro.props;
+---
+<div class="tool-list">
+  <div class="tool-list-header">
+    <span>🔧</span> Required Tools
+  </div>
+  <ul>
+    {tools.map((tool) => (
+      <li>{tool}</li>
+    ))}
+  </ul>
+</div>

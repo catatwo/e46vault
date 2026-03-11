@@ -1,0 +1,330 @@
+/* E46 Vault - BMW-Inspired Theme */
+
+/* ===== Color Variables ===== */
+:root {
+  --bmw-blue: #0066b1;
+  --bmw-blue-light: #1a8fd8;
+  --bmw-blue-dark: #004a80;
+  --bmw-silver: #a0a0a0;
+  --bmw-dark: #1a1a2e;
+  --danger: #d32f2f;
+  --danger-bg: #fdecea;
+  --warning: #f57c00;
+  --warning-bg: #fff3e0;
+  --success: #388e3c;
+  --success-bg: #e8f5e9;
+  --info: #0288d1;
+  --info-bg: #e1f5fe;
+}
+
+/* ===== Starlight Theme Overrides ===== */
+:root {
+  --sl-color-accent-low: #003d6b;
+  --sl-color-accent: #0066b1;
+  --sl-color-accent-high: #4da6e8;
+  --sl-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --sl-font-mono: 'JetBrains Mono', 'Fira Code', 'Consolas', monospace;
+}
+
+[data-theme='dark'] {
+  --sl-color-accent-low: #0d3a5c;
+  --sl-color-accent: #1a8fd8;
+  --sl-color-accent-high: #7ec8f0;
+  --danger-bg: #2d1515;
+  --warning-bg: #2d2215;
+  --success-bg: #152d18;
+  --info-bg: #15222d;
+}
+
+/* ===== Part Number Component ===== */
+.part-number {
+  font-family: var(--sl-font-mono);
+  font-size: 0.9em;
+  font-weight: 600;
+  color: var(--bmw-blue);
+  background: var(--info-bg);
+  padding: 0.15em 0.45em;
+  border-radius: 4px;
+  white-space: nowrap;
+  border: 1px solid color-mix(in srgb, var(--bmw-blue) 20%, transparent);
+}
+
+[data-theme='dark'] .part-number {
+  color: var(--bmw-blue-light);
+}
+
+/* ===== Torque Spec Component ===== */
+.torque-spec {
+  font-family: var(--sl-font-mono);
+  font-weight: 600;
+  color: var(--success);
+  background: var(--success-bg);
+  padding: 0.15em 0.45em;
+  border-radius: 4px;
+  white-space: nowrap;
+  border: 1px solid color-mix(in srgb, var(--success) 20%, transparent);
+}
+
+.torque-spec .unit {
+  font-weight: 400;
+  opacity: 0.8;
+  margin-left: 0.15em;
+}
+
+/* ===== Fluid Spec Component ===== */
+.fluid-spec {
+  font-family: var(--sl-font-mono);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  background: var(--info-bg);
+  padding: 0.3em 0.6em;
+  border-radius: 4px;
+  border: 1px solid color-mix(in srgb, var(--info) 20%, transparent);
+}
+
+.fluid-spec .fluid-type {
+  font-weight: 600;
+  color: var(--info);
+}
+
+.fluid-spec .fluid-capacity {
+  color: var(--sl-color-text);
+  opacity: 0.85;
+}
+
+/* ===== Tool List Component ===== */
+.tool-list {
+  background: var(--info-bg);
+  border: 1px solid color-mix(in srgb, var(--info) 25%, transparent);
+  border-radius: 8px;
+  padding: 1em 1.25em;
+  margin: 1em 0;
+}
+
+.tool-list-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-weight: 700;
+  font-size: 0.95em;
+  color: var(--info);
+  margin-bottom: 0.6em;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.tool-list ul {
+  margin: 0;
+  padding-left: 1.5em;
+  list-style: disc;
+}
+
+.tool-list li {
+  padding: 0.15em 0;
+  font-size: 0.95em;
+}
+
+/* ===== Difficulty Rating Component ===== */
+.difficulty-rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  font-size: 0.9em;
+  font-weight: 600;
+  padding: 0.25em 0.6em;
+  border-radius: 999px;
+}
+
+.difficulty-rating[data-level="1"] {
+  background: var(--success-bg);
+  color: var(--success);
+  border: 1px solid color-mix(in srgb, var(--success) 30%, transparent);
+}
+
+.difficulty-rating[data-level="2"] {
+  background: #e8f5e9;
+  color: #2e7d32;
+  border: 1px solid #a5d6a7;
+}
+
+.difficulty-rating[data-level="3"] {
+  background: var(--warning-bg);
+  color: var(--warning);
+  border: 1px solid color-mix(in srgb, var(--warning) 30%, transparent);
+}
+
+.difficulty-rating[data-level="4"] {
+  background: #fbe9e7;
+  color: #d84315;
+  border: 1px solid #ffab91;
+}
+
+.difficulty-rating[data-level="5"] {
+  background: var(--danger-bg);
+  color: var(--danger);
+  border: 1px solid color-mix(in srgb, var(--danger) 30%, transparent);
+}
+
+.difficulty-rating .wrench {
+  font-size: 0.85em;
+}
+
+/* ===== Warning Callout Component ===== */
+.warning-callout {
+  background: var(--danger-bg);
+  border: 2px solid var(--danger);
+  border-radius: 8px;
+  padding: 1em 1.25em;
+  margin: 1.25em 0;
+}
+
+.warning-callout-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-weight: 700;
+  color: var(--danger);
+  margin-bottom: 0.5em;
+  font-size: 1.05em;
+}
+
+.warning-callout-body {
+  color: inherit;
+  line-height: 1.6;
+}
+
+/* ===== Time Estimate Component ===== */
+.time-estimate {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  font-size: 0.9em;
+  color: var(--sl-color-text);
+  opacity: 0.85;
+  font-family: var(--sl-font-mono);
+}
+
+.time-estimate .clock-icon {
+  font-size: 1em;
+}
+
+/* ===== Year Range Component ===== */
+.year-range {
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 600;
+  background: color-mix(in srgb, var(--bmw-blue) 12%, transparent);
+  color: var(--bmw-blue);
+  padding: 0.2em 0.55em;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--bmw-blue) 25%, transparent);
+  vertical-align: middle;
+}
+
+[data-theme='dark'] .year-range {
+  color: var(--bmw-blue-light);
+}
+
+/* ===== Part Number Table ===== */
+.part-number-table,
+.torque-spec-table,
+.fluid-capacity-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+  font-size: 0.92em;
+}
+
+.part-number-table th,
+.torque-spec-table th,
+.fluid-capacity-table th {
+  background: color-mix(in srgb, var(--bmw-blue) 10%, transparent);
+  color: var(--bmw-blue);
+  font-weight: 700;
+  text-align: left;
+  padding: 0.65em 0.8em;
+  border-bottom: 2px solid var(--bmw-blue);
+  font-size: 0.9em;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+[data-theme='dark'] .part-number-table th,
+[data-theme='dark'] .torque-spec-table th,
+[data-theme='dark'] .fluid-capacity-table th {
+  color: var(--bmw-blue-light);
+  border-bottom-color: var(--bmw-blue-light);
+}
+
+.part-number-table td,
+.torque-spec-table td,
+.fluid-capacity-table td {
+  padding: 0.55em 0.8em;
+  border-bottom: 1px solid color-mix(in srgb, var(--sl-color-text) 10%, transparent);
+}
+
+.part-number-table tr:hover td,
+.torque-spec-table tr:hover td,
+.fluid-capacity-table tr:hover td {
+  background: color-mix(in srgb, var(--bmw-blue) 5%, transparent);
+}
+
+/* ===== Table Filter ===== */
+.table-filter {
+  margin-bottom: 0.75em;
+}
+
+.table-filter input {
+  width: 100%;
+  max-width: 350px;
+  padding: 0.5em 0.75em;
+  border: 1px solid color-mix(in srgb, var(--sl-color-text) 20%, transparent);
+  border-radius: 6px;
+  font-size: 0.9em;
+  background: var(--sl-color-bg);
+  color: var(--sl-color-text);
+}
+
+.table-filter input:focus {
+  outline: none;
+  border-color: var(--bmw-blue);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--bmw-blue) 15%, transparent);
+}
+
+/* ===== Card Grid (for landing page) ===== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.25em;
+  margin: 1.5em 0;
+}
+
+.card-grid .card {
+  background: var(--sl-color-bg);
+  border: 1px solid color-mix(in srgb, var(--sl-color-text) 12%, transparent);
+  border-radius: 8px;
+  padding: 1.25em;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.card-grid .card:hover {
+  border-color: var(--bmw-blue);
+  box-shadow: 0 2px 12px color-mix(in srgb, var(--bmw-blue) 10%, transparent);
+}
+
+.card-grid .card h3 {
+  margin-top: 0;
+  font-size: 1.05em;
+}
+
+/* ===== Superseded Part Number ===== */
+.superseded {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.superseded-arrow {
+  margin: 0 0.3em;
+  color: var(--warning);
+}

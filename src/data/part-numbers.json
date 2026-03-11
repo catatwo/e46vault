@@ -1,0 +1,77 @@
+{
+  "categories": [
+    {
+      "name": "Engine",
+      "parts": [
+        { "partNumber": "11 12 0 030 496", "description": "Valve cover gasket set", "superseded": null, "notes": "Includes spark plug tube seals. M54 engine." },
+        { "partNumber": "11 36 1 432 532", "description": "VANOS solenoid", "superseded": null, "notes": "Same part for intake and exhaust (interchangeable)" },
+        { "partNumber": "11 61 7 544 805", "description": "DISA valve (intake manifold)", "superseded": null, "notes": "3.0L M54 only. Check flap pin before failure." },
+        { "partNumber": "11 42 7 512 300", "description": "Oil filter element", "superseded": null, "notes": "Mann HU925/4x cross-reference" },
+        { "partNumber": "11 13 1 437 237", "description": "Oil pan gasket", "superseded": null, "notes": "Fits M50/M52/M54 engines" },
+        { "partNumber": "12 12 0 037 607", "description": "Spark plug (NGK BKR6EQUP)", "superseded": null, "notes": "OEM for all M52/M54 engines, set of 6" }
+      ]
+    },
+    {
+      "name": "Cooling System",
+      "parts": [
+        { "partNumber": "11 53 1 437 040", "description": "Water pump (mechanical)", "superseded": null, "notes": "Stewart or OEM recommended" },
+        { "partNumber": "11 53 7 509 227", "description": "Thermostat (97°C)", "superseded": null, "notes": "Wahler OEM" },
+        { "partNumber": "17 11 9 071 518", "description": "Radiator (manual trans)", "superseded": null, "notes": "Behr OEM" },
+        { "partNumber": "17 11 9 071 519", "description": "Radiator (auto trans)", "superseded": null, "notes": "Includes ATF cooler" },
+        { "partNumber": "17 11 7 573 781", "description": "Expansion tank", "superseded": "17 13 7 787 039", "notes": "Replace preventatively with cooling system service" },
+        { "partNumber": "17 12 7 510 952", "description": "Upper radiator hose", "superseded": null, "notes": "" },
+        { "partNumber": "11 53 1 436 408", "description": "Lower radiator hose", "superseded": null, "notes": "" },
+        { "partNumber": "11 52 7 505 302", "description": "Fan clutch", "superseded": null, "notes": "Replace with water pump" }
+      ]
+    },
+    {
+      "name": "Transmission",
+      "parts": [
+        { "partNumber": "21 21 7 523 620", "description": "Clutch kit (240mm)", "superseded": null, "notes": "LuK or Sachs OEM" },
+        { "partNumber": "21 52 6 785 966", "description": "Clutch slave cylinder", "superseded": null, "notes": "Replace with clutch" },
+        { "partNumber": "24 34 1 423 376", "description": "Auto trans filter (ZF 5HP19)", "superseded": null, "notes": "Pan gasket: 24 10 1 423 380" }
+      ]
+    },
+    {
+      "name": "Suspension",
+      "parts": [
+        { "partNumber": "31 12 6 783 376", "description": "Front control arm bushing kit (left and right)", "superseded": null, "notes": "Lemförder or Meyle HD. Includes brackets." },
+        { "partNumber": "31 12 2 343 353", "description": "Front control arm (left)", "superseded": null, "notes": "Complete arm assembly" },
+        { "partNumber": "31 12 2 343 352", "description": "Front control arm (right)", "superseded": null, "notes": "Complete arm assembly" },
+        { "partNumber": "31 35 6 780 847", "description": "Front sway bar end link", "superseded": null, "notes": "Fits E46" }
+      ]
+    },
+    {
+      "name": "Brakes",
+      "parts": [
+        { "partNumber": "34 11 6 864 047", "description": "Front brake rotor (325x25mm)", "superseded": null, "notes": "330i/Ci/xi. Zimmermann or Brembo." },
+        { "partNumber": "34 21 6 864 052", "description": "Rear brake rotor (320x22mm)", "superseded": null, "notes": "330i/Ci/xi rear — vented" },
+        { "partNumber": "34 11 6 779 652", "description": "Front brake pad set", "superseded": null, "notes": "330i/Ci/xi. Includes wear sensor." },
+        { "partNumber": "34 21 6 761 248", "description": "Rear brake pad set", "superseded": null, "notes": "Includes wear sensor" }
+      ]
+    },
+    {
+      "name": "Electrical",
+      "parts": [
+        { "partNumber": "12 41 7 515 392", "description": "Starter motor", "superseded": null, "notes": "Bosch. 09/2002+ production." },
+        { "partNumber": "64 11 6 923 204", "description": "Blower motor final stage unit (FSR)", "superseded": null, "notes": "Common failure item. Supersedes 64 11 6 929 486." }
+      ]
+    },
+    {
+      "name": "HVAC",
+      "parts": [
+        { "partNumber": "64 31 9 071 935", "description": "Cabin air filter (set of 2)", "superseded": null, "notes": "Replace every 15k miles" },
+        { "partNumber": "64 11 8 369 805", "description": "Heater control valve", "superseded": null, "notes": "Auxiliary water pump" }
+      ]
+    },
+    {
+      "name": "Maintenance",
+      "parts": [
+        { "partNumber": "83 21 2 365 946", "description": "Engine oil - BMW LL-01 5W-30", "superseded": null, "notes": "Recommended for M54 engine" },
+        { "partNumber": "83 22 2 339 219", "description": "Manual trans fluid (MTF-LT-2)", "superseded": null, "notes": "Supersedes 83 22 2 163 514. 1L bottle, need ~1.5L." },
+        { "partNumber": "82 14 1 467 704", "description": "BMW coolant concentrate", "superseded": null, "notes": "Blue, mix 50/50 with distilled water" },
+        { "partNumber": "07 11 9 963 151", "description": "Oil drain plug gasket (crush washer)", "superseded": null, "notes": "Replace every oil change" }
+      ]
+    }
+  ]
+}

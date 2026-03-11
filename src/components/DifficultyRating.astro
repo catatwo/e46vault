@@ -1,0 +1,18 @@
+---
+interface Props {
+  level: 1 | 2 | 3 | 4 | 5;
+}
+const { level } = Astro.props;
+const labels: Record<number, string> = {
+  1: 'Beginner',
+  2: 'Easy',
+  3: 'Intermediate',
+  4: 'Advanced',
+  5: 'Expert',
+};
+const wrenches = '🔧'.repeat(level);
+---
+<span class="difficulty-rating" data-level={level}>
+  <span class="wrench">{wrenches}</span>
+  {labels[level]}
+</span>

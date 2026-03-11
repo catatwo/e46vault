@@ -1,0 +1,123 @@
+{
+  "fluids": [
+    {
+      "system": "Engine Oil",
+      "specification": "5W-30 or 0W-30 (BMW LL-01 approved)",
+      "capacity": "6.5 liters (6.9 US quarts)",
+      "interval": "7,500 miles / 12 months",
+      "notes": "RWD models only. AWD/330xi: see separate entry. With filter change. BMW LL-01 approved oils include Castrol Edge 0W-30, Mobil 1 0W-40, Pennzoil Platinum Euro 0W-40. Factory interval is 15,000 mi; 7,500 mi is a common conservative recommendation."
+    },
+    {
+      "system": "Engine Oil (AWD / 330xi)",
+      "specification": "5W-30 or 0W-30 (BMW LL-01 approved)",
+      "capacity": "7.5 liters (7.9 US quarts)",
+      "interval": "7,500 miles / 12 months",
+      "notes": "AWD models require 1 liter more than RWD due to oil pan design. With filter change."
+    },
+    {
+      "system": "Coolant",
+      "specification": "BMW Blue Coolant (G48) 50/50 with distilled water",
+      "capacity": "8.4 liters (8.9 US quarts)",
+      "interval": "24 months / 30,000 miles",
+      "notes": "Total system capacity per Bentley manual. Use distilled water only. Phosphate/nitrate-free ethylene glycol antifreeze."
+    },
+    {
+      "system": "Manual Transmission (GS6-37BZ 6-speed)",
+      "specification": "MTF-LT-2 (75W-80 GL-4)",
+      "capacity": "1.5 liters (1.6 US quarts)",
+      "interval": "60,000 miles",
+      "notes": "Fill until fluid runs from fill hole. Earlier 330i models may have 5-speed Getrag (1.0L) or ZF (1.2L). Original factory fill was MTF-LT-1."
+    },
+    {
+      "system": "Automatic Transmission (ZF 5HP19 / A5S 325Z)",
+      "specification": "Esso LT 71141 (ZF Lifeguard 5)",
+      "capacity": "9.0 liters total / 4.0 liters drain & fill",
+      "interval": "60,000 miles",
+      "notes": "Pre-facelift 330i (to ~03/2003). Drain & fill capacity per Bentley manual. ZF considers this a lifetime fill, but periodic service extends life. Check level at 38°C via fill plug."
+    },
+    {
+      "system": "Automatic Transmission (GM 5L40-E / A5S 390R)",
+      "specification": "Texaco ETL 8072B or Dexron VI",
+      "capacity": "9.0 liters total / 4.0 liters drain & fill",
+      "interval": "60,000 miles",
+      "notes": "Facelift 330i (from ~03/2003) and all 330xi. Do NOT use ZF fluid in GM transmission — different specifications."
+    },
+    {
+      "system": "Differential (open, RWD)",
+      "specification": "SAE 75W-90 synthetic (BMW SAF-XO)",
+      "capacity": "0.9 liters (0.95 US quarts)",
+      "interval": "60,000 miles",
+      "notes": "Fill until fluid runs from fill hole. AWD rear diff: 1.0 liter. See separate entries for AWD front diff and transfer case."
+    },
+    {
+      "system": "Differential (LSD)",
+      "specification": "SAE 75W-140 synthetic with LSD friction modifier",
+      "capacity": "1.0 liters (1.1 US quarts)",
+      "interval": "30,000 miles",
+      "notes": "LSD requires friction modifier additive"
+    },
+    {
+      "system": "Transfer Case (AWD / 330xi)",
+      "specification": "ATF (same as automatic transmission)",
+      "capacity": "0.24 liters new fill / 0.16 liters oil change",
+      "interval": "60,000 miles",
+      "notes": "Per Bentley manual. Very small capacity — use a measured syringe for accuracy."
+    },
+    {
+      "system": "Front Differential (AWD / 330xi)",
+      "specification": "SAE 75W-90 synthetic (BMW SAF-XO)",
+      "capacity": "0.7 liters (0.74 US quarts) fill / 0.6 liters (0.63 US quarts) refill",
+      "interval": "60,000 miles",
+      "notes": "Fill until fluid runs from fill hole. Per Bentley manual."
+    },
+    {
+      "system": "Power Steering",
+      "specification": "ATF Dexron III (factory fill for most USA-market E46)",
+      "capacity": "1.0 liters (1.1 US quarts)",
+      "interval": "As needed (permanently sealed system, no drain plug)",
+      "notes": "Some cold-climate market vehicles use Pentosin CHF 11S (green). Check existing fluid color: red = ATF, green = CHF 11S. Never mix the two types."
+    },
+    {
+      "system": "Brake Fluid",
+      "specification": "DOT 4",
+      "capacity": "1.0 liters (1.1 US quarts)",
+      "interval": "24 months",
+      "notes": "Flush entire system. Hygroscopic — absorbs moisture over time. Use only new fluid from unopened containers."
+    },
+    {
+      "system": "Clutch Fluid (Manual)",
+      "specification": "DOT 4 (same as brake fluid)",
+      "capacity": "0.25 liters",
+      "interval": "24 months (with brake flush)",
+      "notes": "Shares reservoir with brake system on E46"
+    },
+    {
+      "system": "Fuel Tank",
+      "specification": "Premium Unleaded 91+ AKI (95+ RON)",
+      "capacity": "63 liters (16.6 US gallons)",
+      "interval": "N/A",
+      "notes": "Premium required for optimal performance. European RON 98 (Super Plus) preferred where available."
+    },
+    {
+      "system": "Windshield Washer",
+      "specification": "BMW washer concentrate or -30°F rated fluid",
+      "capacity": "5.5 liters with headlight washers / 3.5 liters without",
+      "interval": "As needed",
+      "notes": "Capacity depends on whether headlight washer system is equipped"
+    },
+    {
+      "system": "A/C Refrigerant",
+      "specification": "R134a",
+      "capacity": "740g ±25g (26 oz)",
+      "interval": "As needed",
+      "notes": "PAG oil type and quantity varies by compressor — check underhood sticker. Check for leaks before recharging."
+    },
+    {
+      "system": "Front Axle (wheel bearing grease)",
+      "specification": "High-quality lithium complex grease",
+      "capacity": "As needed",
+      "interval": "Bearing replacement",
+      "notes": "Sealed bearings — no serviceable grease interval"
+    }
+  ]
+}

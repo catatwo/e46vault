@@ -1,0 +1,60 @@
+---
+title: E46 Vault
+description: The comprehensive BMW E46 330i/Ci/xi knowledge base — maintenance, repair, modifications, and reference
+template: splash
+hero:
+  tagline: The comprehensive BMW E46 330i/Ci/xi knowledge base — maintenance guides, technical reference, part numbers, and community wisdom.
+  actions:
+    - text: Get Started
+      link: /e46vault/overview/history/
+      icon: right-arrow
+    - text: Common Problems
+      link: /e46vault/problems/overview/
+      variant: minimal
+      icon: warning
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid>
+  <Card title="Engine (M54B30)" icon="setting">
+    Complete M54 engine coverage: VANOS, cooling system, intake, exhaust, timing, ignition, fuel system, and oil system.
+    [Explore Engine →](/e46vault/engine/overview/)
+  </Card>
+  <Card title="Transmission & Drivetrain" icon="rocket">
+    Manual and automatic transmissions, clutch, driveshaft, and differential guides.
+    [Explore Drivetrain →](/e46vault/transmission/overview/)
+  </Card>
+  <Card title="Suspension & Steering" icon="puzzle">
+    Front and rear suspension, subframe, alignment, coilovers, steering rack, and tie rods.
+    [Explore Suspension →](/e46vault/suspension/overview/)
+  </Card>
+  <Card title="Brakes & Wheels" icon="approve-check-circle">
+    Brake service, ABS/DSC, OEM wheels, fitment guide, tire recommendations, and upgrades.
+    [Explore Brakes →](/e46vault/brakes/overview/)
+  </Card>
+  <Card title="Electrical" icon="laptop">
+    DME, EWS, General Module, LCM, wiring, fuses, CAN-bus, OBD diagnostics, lighting, and audio.
+    [Explore Electrical →](/e46vault/electrical/overview/)
+  </Card>
+  <Card title="Common Problems" icon="warning">
+    21 documented failure points with symptoms, diagnosis, and repair guides.
+    [View Problems →](/e46vault/problems/overview/)
+  </Card>
+  <Card title="Maintenance & DIY" icon="list-format">
+    Service intervals, fluid specs, essential tools, jack points, and 11 step-by-step DIY procedures.
+    [View Maintenance →](/e46vault/maintenance/overview/)
+  </Card>
+  <Card title="Reference" icon="open-book">
+    Torque specs, fluid capacities, part numbers, fault codes, fuse charts, and abbreviations.
+    [View Reference →](/e46vault/reference/overview/)
+  </Card>
+  <Card title="Performance" icon="star">
+    Intake, exhaust, ECU tuning, forced induction, suspension, brakes, and weight reduction.
+    [View Performance →](/e46vault/performance/overview/)
+  </Card>
+  <Card title="Buying Guide" icon="document">
+    Pre-purchase inspection, pricing, ownership costs, and first steps after purchase.
+    [View Buying Guide →](/e46vault/buying/overview/)
+  </Card>
+</CardGrid>

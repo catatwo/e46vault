@@ -1,0 +1,44 @@
+name: Part Number Update
+description: Submit new, corrected, or superseded part numbers
+title: "[Parts] "
+labels: ["parts", "content"]
+body:
+  - type: input
+    id: component
+    attributes:
+      label: Component
+      description: What component is this part for?
+      placeholder: e.g., Thermostat, Control Arm, Valve Cover Gasket
+    validations:
+      required: true
+  - type: input
+    id: old_pn
+    attributes:
+      label: Old Part Number
+      description: The current/old part number (if superseded)
+      placeholder: e.g., 11 53 1 437 040
+    validations:
+      required: false
+  - type: input
+    id: new_pn
+    attributes:
+      label: New/Correct Part Number
+      description: The new or correct part number
+      placeholder: e.g., 11 53 7 509 227
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: Where did you verify this part number?
+      placeholder: e.g., realoem.com, BMW ETK, dealer confirmation
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Any additional information (vendor alternatives, compatibility notes, etc.)
+    validations:
+      required: false

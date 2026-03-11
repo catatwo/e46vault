@@ -1,0 +1,9 @@
+---
+interface Props {
+  time: string;
+}
+const { time } = Astro.props;
+---
+<span class="time-estimate">
+  <span class="clock-icon">⏱</span> {time}
+</span>

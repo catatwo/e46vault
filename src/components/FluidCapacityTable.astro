@@ -1,0 +1,42 @@
+---
+import fluidData from '../data/fluid-capacities.json';
+---
+<div class="table-filter">
+  <input type="text" placeholder="Filter fluids..." id="fluid-filter" />
+</div>
+
+<table class="fluid-capacity-table" data-filterable>
+  <thead>
+    <tr>
+      <th>System</th>
+      <th>Specification</th>
+      <th>Capacity</th>
+      <th>Interval</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    {fluidData.fluids.map((fluid) => (
+      <tr>
+        <td><strong>{fluid.system}</strong></td>
+        <td>{fluid.specification}</td>
+        <td>{fluid.capacity}</td>
+        <td>{fluid.interval}</td>
+        <td>{fluid.notes}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>
+
+<script>
+  const input = document.getElementById('fluid-filter') as HTMLInputElement;
+  if (input) {
+    input.addEventListener('input', () => {
+      const filter = input.value.toLowerCase();
+      document.querySelectorAll('.fluid-capacity-table tbody tr').forEach((row) => {
+        const text = (row as HTMLElement).textContent?.toLowerCase() || '';
+        (row as HTMLElement).style.display = text.includes(filter) ? '' : 'none';
+      });
+    });
+  }
+</script>

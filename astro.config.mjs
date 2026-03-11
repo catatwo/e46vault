@@ -1,0 +1,518 @@
+// @ts-check
+import { defineConfig } from 'astro/config';
+import starlight from '@astrojs/starlight';
+import mdx from '@astrojs/mdx';
+
+// https://astro.build/config
+export default defineConfig({
+	site: 'https://catatwo.github.io',
+	base: '/e46vault',
+	integrations: [
+		starlight({
+			title: 'E46 Vault',
+			description: 'The encyclopedic reference for the BMW E46 330Ci and 330i (1999-2006)',
+			social: [
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/catatwo/e46vault' },
+			],
+			editLink: {
+				baseUrl: 'https://github.com/catatwo/e46vault/edit/master/',
+			},
+			customCss: [
+				'./src/styles/custom.css',
+				'./src/styles/e46-theme.css',
+			],
+			sidebar: [
+				{
+					label: 'Overview',
+					collapsed: false,
+					items: [
+						{ slug: 'overview/history' },
+						{ slug: 'overview/variants' },
+						{ slug: 'overview/vin-decoder' },
+						{ slug: 'overview/paint-codes' },
+						{ slug: 'overview/option-codes' },
+						{ slug: 'overview/production-changes' },
+						{ slug: 'overview/zhp-package' },
+						{ slug: 'overview/technical-specs' },
+						{ slug: 'overview/facelift-differences' },
+					],
+				},
+				{
+					label: 'Engine (M54B30)',
+					collapsed: true,
+					items: [
+						{ slug: 'engine/overview' },
+						{
+							label: 'VANOS System',
+							items: [
+								{ slug: 'engine/vanos/how-it-works' },
+								{ slug: 'engine/vanos/single-vanos' },
+								{ slug: 'engine/vanos/double-vanos' },
+								{ slug: 'engine/vanos/diagnosis' },
+								{ slug: 'engine/vanos/rebuild' },
+								{ slug: 'engine/vanos/upgrade-options' },
+							],
+						},
+						{
+							label: 'Cooling System',
+							items: [
+								{ slug: 'engine/cooling/overview' },
+								{ slug: 'engine/cooling/water-pump' },
+								{ slug: 'engine/cooling/thermostat' },
+								{ slug: 'engine/cooling/radiator' },
+								{ slug: 'engine/cooling/expansion-tank' },
+								{ slug: 'engine/cooling/hoses' },
+								{ slug: 'engine/cooling/fan-clutch' },
+								{ slug: 'engine/cooling/auxiliary-fan' },
+								{ slug: 'engine/cooling/bleeding' },
+							],
+						},
+						{
+							label: 'Intake System',
+							items: [
+								{ slug: 'engine/intake/air-filter' },
+								{ slug: 'engine/intake/maf-sensor' },
+								{ slug: 'engine/intake/throttle-body' },
+								{ slug: 'engine/intake/intake-manifold' },
+								{ slug: 'engine/intake/disa-valve' },
+								{ slug: 'engine/intake/idle-control' },
+							],
+						},
+						{
+							label: 'Exhaust System',
+							items: [
+								{ slug: 'engine/exhaust/manifold' },
+								{ slug: 'engine/exhaust/catalytic-converters' },
+								{ slug: 'engine/exhaust/center-section' },
+								{ slug: 'engine/exhaust/rear-muffler' },
+								{ slug: 'engine/exhaust/oxygen-sensors' },
+								{ slug: 'engine/exhaust/hangers-gaskets' },
+							],
+						},
+						{ slug: 'engine/oil-system' },
+						{
+							label: 'Timing & Valvetrain',
+							items: [
+								{ slug: 'engine/timing/chain-guides' },
+								{ slug: 'engine/timing/tensioner' },
+								{ slug: 'engine/timing/valve-adjustment' },
+							],
+						},
+						{
+							label: 'Ignition System',
+							items: [
+								{ slug: 'engine/ignition/coil-packs' },
+								{ slug: 'engine/ignition/spark-plugs' },
+							],
+						},
+						{
+							label: 'Fuel System',
+							items: [
+								{ slug: 'engine/fuel/fuel-pump' },
+								{ slug: 'engine/fuel/fuel-filter' },
+								{ slug: 'engine/fuel/injectors' },
+								{ slug: 'engine/fuel/fuel-pressure-regulator' },
+							],
+						},
+						{ slug: 'engine/drive-belts' },
+						{ slug: 'engine/engine-mounts' },
+					],
+				},
+				{
+					label: 'Transmission & Drivetrain',
+					collapsed: true,
+					items: [
+						{ slug: 'transmission/overview' },
+						{
+							label: 'Manual Transmission',
+							items: [
+								{ slug: 'transmission/manual/getrag-s6s-420g' },
+								{ slug: 'transmission/manual/fluid-change' },
+								{ slug: 'transmission/manual/shift-linkage' },
+								{ slug: 'transmission/manual/short-shift-kit' },
+								{ slug: 'transmission/manual/common-issues' },
+							],
+						},
+						{
+							label: 'Automatic Transmission',
+							items: [
+								{ slug: 'transmission/automatic/gm-a5s-390r' },
+								{ slug: 'transmission/automatic/zf-5hp19' },
+								{ slug: 'transmission/automatic/fluid-change' },
+								{ slug: 'transmission/automatic/mechatronic' },
+								{ slug: 'transmission/automatic/common-issues' },
+							],
+						},
+						{
+							label: 'Clutch System',
+							items: [
+								{ slug: 'transmission/clutch/components' },
+								{ slug: 'transmission/clutch/replacement' },
+								{ slug: 'transmission/clutch/dual-mass-flywheel' },
+								{ slug: 'transmission/clutch/hydraulics' },
+							],
+						},
+						{
+							label: 'Driveshaft',
+							items: [
+								{ slug: 'transmission/driveshaft/center-support-bearing' },
+								{ slug: 'transmission/driveshaft/guibo' },
+								{ slug: 'transmission/driveshaft/u-joints' },
+							],
+						},
+						{
+							label: 'Differential',
+							items: [
+								{ slug: 'transmission/differential/overview' },
+								{ slug: 'transmission/differential/fluid-change' },
+								{ slug: 'transmission/differential/lsd-options' },
+								{ slug: 'transmission/differential/ratio-guide' },
+							],
+						},
+					],
+				},
+				{
+					label: 'Suspension',
+					collapsed: true,
+					items: [
+						{ slug: 'suspension/overview' },
+						{
+							label: 'Front Suspension',
+							items: [
+								{ slug: 'suspension/front/control-arms' },
+								{ slug: 'suspension/front/struts' },
+								{ slug: 'suspension/front/sway-bar' },
+								{ slug: 'suspension/front/wheel-bearings' },
+							],
+						},
+						{
+							label: 'Rear Suspension',
+							items: [
+								{ slug: 'suspension/rear/shocks' },
+								{ slug: 'suspension/rear/control-arms' },
+								{ slug: 'suspension/rear/sway-bar' },
+								{ slug: 'suspension/rear/trailing-arm-bushings' },
+							],
+						},
+						{
+							label: 'Subframe',
+							items: [
+								{ slug: 'suspension/subframe/overview' },
+								{ slug: 'suspension/subframe/reinforcement' },
+								{ slug: 'suspension/subframe/bushings' },
+							],
+						},
+						{ slug: 'suspension/alignment' },
+						{ slug: 'suspension/coilovers' },
+						{ slug: 'suspension/upgrades' },
+					],
+				},
+				{
+					label: 'Steering',
+					collapsed: true,
+					items: [
+						{ slug: 'steering/overview' },
+						{ slug: 'steering/rack' },
+						{ slug: 'steering/tie-rods' },
+						{ slug: 'steering/power-steering' },
+						{ slug: 'steering/column' },
+						{ slug: 'steering/wheel' },
+					],
+				},
+				{
+					label: 'Brakes',
+					collapsed: true,
+					items: [
+						{ slug: 'brakes/overview' },
+						{ slug: 'brakes/front' },
+						{ slug: 'brakes/rear' },
+						{ slug: 'brakes/fluid' },
+						{ slug: 'brakes/lines' },
+						{ slug: 'brakes/parking-brake' },
+						{ slug: 'brakes/abs-dsc' },
+						{ slug: 'brakes/upgrades' },
+					],
+				},
+				{
+					label: 'Wheels & Tires',
+					collapsed: true,
+					items: [
+						{ slug: 'wheels/overview' },
+						{ slug: 'wheels/oem-styles' },
+						{ slug: 'wheels/fitment' },
+						{ slug: 'wheels/tires' },
+						{ slug: 'wheels/tpms' },
+						{ slug: 'wheels/lug-bolts' },
+					],
+				},
+				{
+					label: 'Electrical',
+					collapsed: true,
+					items: [
+						{ slug: 'electrical/overview' },
+						{
+							label: 'Control Modules',
+							items: [
+								{ slug: 'electrical/modules/dme' },
+								{ slug: 'electrical/modules/ews' },
+								{ slug: 'electrical/modules/general-module' },
+								{ slug: 'electrical/modules/lcm' },
+								{ slug: 'electrical/modules/lsz' },
+								{ slug: 'electrical/modules/rain-light-sensor' },
+							],
+						},
+						{
+							label: 'Wiring & Communication',
+							items: [
+								{ slug: 'electrical/wiring/can-bus' },
+								{ slug: 'electrical/wiring/k-bus' },
+								{ slug: 'electrical/wiring/obd-port' },
+								{ slug: 'electrical/wiring/connectors' },
+								{ slug: 'electrical/wiring/harness-repair' },
+							],
+						},
+						{
+							label: 'Fuses & Relays',
+							items: [
+								{ slug: 'electrical/fuses/fuse-box-locations' },
+								{ slug: 'electrical/fuses/fuse-chart' },
+								{ slug: 'electrical/fuses/relay-locations' },
+							],
+						},
+						{
+							label: 'Lighting',
+							items: [
+								{ slug: 'electrical/lighting/headlights' },
+								{ slug: 'electrical/lighting/tail-lights' },
+								{ slug: 'electrical/lighting/interior-lights' },
+								{ slug: 'electrical/lighting/angel-eyes' },
+								{ slug: 'electrical/lighting/led-upgrades' },
+							],
+						},
+						{
+							label: 'Audio & Electronics',
+							items: [
+								{ slug: 'electrical/audio/head-unit' },
+								{ slug: 'electrical/audio/speakers' },
+								{ slug: 'electrical/audio/amplifier' },
+								{ slug: 'electrical/audio/bluetooth-retrofit' },
+								{ slug: 'electrical/audio/navigation' },
+							],
+						},
+						{ slug: 'electrical/battery' },
+						{ slug: 'electrical/alternator' },
+						{ slug: 'electrical/starter' },
+					],
+				},
+				{
+					label: 'Body & Interior',
+					collapsed: true,
+					items: [
+						{
+							label: 'Exterior',
+							items: [
+								{ slug: 'body/exterior/bumpers' },
+								{ slug: 'body/exterior/fenders' },
+								{ slug: 'body/exterior/hood' },
+								{ slug: 'body/exterior/trunk-lid' },
+								{ slug: 'body/exterior/doors' },
+								{ slug: 'body/exterior/side-mirrors' },
+								{ slug: 'body/exterior/grilles' },
+								{ slug: 'body/exterior/convertible-top' },
+								{ slug: 'body/exterior/rust-prevention' },
+							],
+						},
+						{
+							label: 'Interior',
+							items: [
+								{ slug: 'body/interior/dashboard' },
+								{ slug: 'body/interior/center-console' },
+								{ slug: 'body/interior/seats' },
+								{ slug: 'body/interior/door-panels' },
+								{ slug: 'body/interior/headliner' },
+								{ slug: 'body/interior/steering-wheel' },
+								{ slug: 'body/interior/shift-knob' },
+								{ slug: 'body/interior/trim-removal' },
+							],
+						},
+						{
+							label: 'Glass & Seals',
+							items: [
+								{ slug: 'body/glass/windshield' },
+								{ slug: 'body/glass/rear-window' },
+								{ slug: 'body/glass/side-windows' },
+								{ slug: 'body/glass/weatherstripping' },
+							],
+						},
+						{
+							label: 'Locks & Security',
+							items: [
+								{ slug: 'body/locks/door-locks' },
+								{ slug: 'body/locks/trunk-lock' },
+								{ slug: 'body/locks/key-fob' },
+								{ slug: 'body/locks/alarm-system' },
+							],
+						},
+					],
+				},
+				{
+					label: 'HVAC',
+					collapsed: true,
+					items: [
+						{ slug: 'hvac/overview' },
+						{ slug: 'hvac/ihka-controls' },
+						{ slug: 'hvac/blower-motor' },
+						{ slug: 'hvac/final-stage-resistor' },
+						{ slug: 'hvac/heater-core' },
+						{ slug: 'hvac/ac-compressor' },
+						{ slug: 'hvac/ac-recharge' },
+						{ slug: 'hvac/cabin-filter' },
+						{ slug: 'hvac/blend-doors' },
+						{ slug: 'hvac/evaporator' },
+					],
+				},
+				{
+					label: 'Maintenance',
+					collapsed: true,
+					items: [
+						{ slug: 'maintenance/overview' },
+						{ slug: 'maintenance/inspection-checklist' },
+						{ slug: 'maintenance/fluids' },
+						{ slug: 'maintenance/tools' },
+						{ slug: 'maintenance/jack-points' },
+						{
+							label: 'DIY Procedures',
+							items: [
+								{ slug: 'maintenance/diy/oil-change' },
+								{ slug: 'maintenance/diy/coolant-flush' },
+								{ slug: 'maintenance/diy/brake-pads' },
+								{ slug: 'maintenance/diy/spark-plugs' },
+								{ slug: 'maintenance/diy/air-filter' },
+								{ slug: 'maintenance/diy/cabin-filter' },
+								{ slug: 'maintenance/diy/trans-fluid' },
+								{ slug: 'maintenance/diy/diff-fluid' },
+								{ slug: 'maintenance/diy/drive-belt' },
+								{ slug: 'maintenance/diy/cooling-system-overhaul' },
+								{ slug: 'maintenance/diy/window-regulator' },
+							],
+						},
+					],
+				},
+				{
+					label: 'Common Problems',
+					collapsed: true,
+					badge: 'Important',
+					items: [
+						{ slug: 'problems/overview' },
+						{ slug: 'problems/cooling-system' },
+						{ slug: 'problems/vanos' },
+						{ slug: 'problems/subframe-cracks' },
+						{ slug: 'problems/window-regulators' },
+						{ slug: 'problems/expansion-tank' },
+						{ slug: 'problems/oil-leaks' },
+						{ slug: 'problems/disa-valve' },
+						{ slug: 'problems/ccv-valve' },
+						{ slug: 'problems/blower-motor-fsr' },
+						{ slug: 'problems/ignition-coils' },
+						{ slug: 'problems/control-arms' },
+						{ slug: 'problems/rtab' },
+						{ slug: 'problems/door-locks' },
+						{ slug: 'problems/pixel-fade' },
+						{ slug: 'problems/vacuum-leaks' },
+						{ slug: 'problems/alternator' },
+						{ slug: 'problems/thermostat' },
+						{ slug: 'problems/abs-sensor' },
+						{ slug: 'problems/water-pump' },
+						{ slug: 'problems/convertible-top' },
+					],
+				},
+				{
+					label: 'Performance',
+					collapsed: true,
+					items: [
+						{ slug: 'performance/overview' },
+						{
+							label: 'Engine Performance',
+							items: [
+								{ slug: 'performance/engine/intake' },
+								{ slug: 'performance/engine/exhaust' },
+								{ slug: 'performance/engine/ecu-tuning' },
+								{ slug: 'performance/engine/forced-induction' },
+								{ slug: 'performance/engine/short-shift' },
+								{ slug: 'performance/engine/lsd' },
+								{ slug: 'performance/engine/cooling-upgrades' },
+							],
+						},
+						{
+							label: 'Chassis Performance',
+							items: [
+								{ slug: 'performance/chassis/suspension-upgrades' },
+								{ slug: 'performance/chassis/brakes-upgrades' },
+								{ slug: 'performance/chassis/weight-reduction' },
+								{ slug: 'performance/chassis/roll-bar' },
+								{ slug: 'performance/chassis/wheels-tires-performance' },
+							],
+						},
+					],
+				},
+				{
+					label: 'Reference',
+					collapsed: true,
+					badge: 'Quick Ref',
+					items: [
+						{ slug: 'reference/overview' },
+						{ slug: 'reference/torque-specs' },
+						{ slug: 'reference/fluid-capacities' },
+						{
+							label: 'Part Numbers',
+							items: [
+								{ slug: 'reference/parts/engine-parts' },
+								{ slug: 'reference/parts/cooling-parts' },
+								{ slug: 'reference/parts/transmission-parts' },
+								{ slug: 'reference/parts/suspension-parts' },
+								{ slug: 'reference/parts/brake-parts' },
+								{ slug: 'reference/parts/electrical-parts' },
+								{ slug: 'reference/parts/body-parts' },
+								{ slug: 'reference/parts/hvac-parts' },
+								{ slug: 'reference/parts/maintenance-parts' },
+							],
+						},
+						{ slug: 'reference/fault-codes' },
+						{ slug: 'reference/fuse-chart' },
+						{ slug: 'reference/tsbs-recalls' },
+						{ slug: 'reference/wiring' },
+						{ slug: 'reference/abbreviations' },
+					],
+				},
+				{
+					label: 'Buying Guide',
+					collapsed: true,
+					items: [
+						{ slug: 'buying/overview' },
+						{ slug: 'buying/inspection' },
+						{ slug: 'buying/pricing' },
+						{ slug: 'buying/comparison' },
+						{ slug: 'buying/first-things' },
+						{ slug: 'buying/costs' },
+						{ slug: 'buying/insurance' },
+						{ slug: 'buying/alternatives' },
+					],
+				},
+				{
+					label: 'Resources',
+					collapsed: true,
+					items: [
+						{ slug: 'resources/overview' },
+						{ slug: 'resources/forums' },
+						{ slug: 'resources/suppliers' },
+						{ slug: 'resources/tools-software' },
+						{ slug: 'resources/manuals' },
+						{ slug: 'resources/youtube' },
+						{ slug: 'resources/contributing' },
+					],
+				},
+			],
+		}),
+		mdx(),
+	],
+});

@@ -1,0 +1,12 @@
+---
+interface Props {
+  nm: number;
+  note?: string;
+}
+const { nm, note } = Astro.props;
+const ftLb = Math.round(nm * 0.7376);
+---
+<span class="torque-spec">
+  {nm}<span class="unit">Nm</span> ({ftLb}<span class="unit">ft-lb</span>)
+</span>
+{note && <span class="torque-note"> — {note}</span>}

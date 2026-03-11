@@ -1,0 +1,185 @@
+{
+  "groups": [
+    {
+      "name": "Engine - General",
+      "specs": [
+        { "component": "Cylinder head bolts (initial)", "value": 40, "unit": "Nm", "notes": "Plus 90° + 90° angle torque. New stretch bolts required." },
+        { "component": "Cylinder head bolts (angle 1)", "value": 90, "unit": "degrees", "notes": "After initial 40 Nm" },
+        { "component": "Cylinder head bolts (angle 2)", "value": 90, "unit": "degrees", "notes": "After first 90°" },
+        { "component": "Valve cover bolts (M6)", "value": 10, "unit": "Nm", "notes": "Aluminum - do not overtighten" },
+        { "component": "Spark plugs", "value": 25, "unit": "Nm", "notes": "Per Bentley manual. Do not use anti-seize unless reducing torque 20%." },
+        { "component": "Oil drain plug (M12)", "value": 25, "unit": "Nm", "notes": "Replace crush washer each time" },
+        { "component": "Oil filter cap", "value": 25, "unit": "Nm", "notes": "" },
+        { "component": "Intake manifold bolts (M7)", "value": 15, "unit": "Nm", "notes": "M8 bolts: 22 Nm. DISA bracket M6: 10 Nm." },
+        { "component": "Exhaust manifold to cylinder head (M7)", "value": 20, "unit": "Nm", "notes": "M7 or M8 bolts. Replace nuts if corroded." },
+        { "component": "Exhaust manifold to cylinder head (M6)", "value": 10, "unit": "Nm", "notes": "M7/M8 bolts: 20 Nm" },
+        { "component": "Crankshaft pulley bolt", "value": 410, "unit": "Nm", "notes": "Single-use bolt. Requires special holder tool." },
+        { "component": "Flywheel bolts (manual)", "value": 105, "unit": "Nm", "notes": "New stretch bolts required" },
+        { "component": "Flexplate bolts (auto)", "value": 121, "unit": "Nm", "notes": "" },
+        { "component": "Camshaft bearing cap to head (M7)", "value": 14, "unit": "Nm", "notes": "" },
+        { "component": "Engine mount to subframe (M10)", "value": 45, "unit": "Nm", "notes": "Self-locking nut" },
+        { "component": "Oil pan to engine block (M6, 8.8)", "value": 10, "unit": "Nm", "notes": "10.9 grade: 12 Nm" },
+        { "component": "Oil pan to engine block (M8, 8.8)", "value": 22, "unit": "Nm", "notes": "" },
+        { "component": "Oil pump bolts (M8)", "value": 22, "unit": "Nm", "notes": "" },
+        { "component": "Oil pump sprocket nut (M10x1)", "value": 25, "unit": "Nm", "notes": "Left-hand thread" },
+        { "component": "Oil pressure switch", "value": 27, "unit": "Nm", "notes": "" },
+        { "component": "Vibration damper to crankshaft hub (M8)", "value": 22, "unit": "Nm", "notes": "" },
+        { "component": "Knock sensor to cylinder block", "value": 20, "unit": "Nm", "notes": "" },
+        { "component": "Camshaft position sensor to head", "value": 5, "unit": "Nm", "notes": "" },
+        { "component": "ECT sensor to cylinder head", "value": 13, "unit": "Nm", "notes": "" },
+        { "component": "Oxygen sensor to exhaust manifold", "value": 50, "unit": "Nm", "notes": "" },
+        { "component": "Intake manifold bracket to manifold (M6)", "value": 10, "unit": "Nm", "notes": "Bracket to cylinder block (M10): 47 Nm" }
+      ]
+    },
+    {
+      "name": "VANOS System",
+      "specs": [
+        { "component": "VANOS unit to cylinder head (M6)", "value": 10, "unit": "Nm", "notes": "M7 nuts: 14 Nm" },
+        { "component": "VANOS spline shaft bolt (T30)", "value": 8, "unit": "Nm", "notes": "Left-hand thread. Do not overtighten." },
+        { "component": "Hydraulic piston set screw (M6)", "value": 10, "unit": "Nm", "notes": "" },
+        { "component": "Oil line banjo bolt to VANOS", "value": 32, "unit": "Nm", "notes": "" },
+        { "component": "Sealing plug to VANOS unit", "value": 50, "unit": "Nm", "notes": "" },
+        { "component": "Primary chain tensioner to head", "value": 70, "unit": "Nm", "notes": "" },
+        { "component": "VANOS solenoid to VANOS unit", "value": 30, "unit": "Nm", "notes": "" },
+        { "component": "Sprocket assembly to camshaft (M7 Torx)", "value": 20, "unit": "Nm", "notes": "Initial torque: 5 Nm. M6 mounting nut: 10 Nm." },
+        { "component": "Exhaust camshaft locating stud", "value": 20, "unit": "Nm", "notes": "" },
+        { "component": "Impulse wheel studs to intake camshaft (M7)", "value": 20, "unit": "Nm", "notes": "" },
+        { "component": "Secondary chain guide to head (Torx)", "value": 10, "unit": "Nm", "notes": "" }
+      ]
+    },
+    {
+      "name": "Cooling System",
+      "specs": [
+        { "component": "Thermostat housing bolts", "value": 10, "unit": "Nm", "notes": "Aluminum - careful of threads" },
+        { "component": "Water pump bolts (M6)", "value": 10, "unit": "Nm", "notes": "Coolant pump to timing chain cover" },
+        { "component": "Water pump pulley bolts", "value": 10, "unit": "Nm", "notes": "" },
+        { "component": "Radiator drain plug", "value": 2.5, "unit": "Nm", "notes": "Plastic - hand tight" },
+        { "component": "Coolant drain plug (block, M12)", "value": 25, "unit": "Nm", "notes": "" },
+        { "component": "Fan clutch nut", "value": 40, "unit": "Nm", "notes": "Left-hand thread" },
+        { "component": "Expansion tank cap", "value": 1.4, "unit": "bar", "notes": "Pressure rating, not torque" },
+        { "component": "Radiator bleed screw", "value": 2.5, "unit": "Nm", "notes": "" },
+        { "component": "Fan blade to viscous clutch bolts", "value": 10, "unit": "Nm", "notes": "" }
+      ]
+    },
+    {
+      "name": "Manual Transmission",
+      "specs": [
+        { "component": "Transmission-to-engine (M12 Torx)", "value": 72, "unit": "Nm", "notes": "M10: 43 Nm, M8: 22 Nm" },
+        { "component": "Transmission crossmember to body (M8)", "value": 21, "unit": "Nm", "notes": "" },
+        { "component": "Shift lever bolts", "value": 22, "unit": "Nm", "notes": "" },
+        { "component": "Transmission fill/drain plug", "value": 50, "unit": "Nm", "notes": "" },
+        { "component": "Clutch to flywheel bolts (M8)", "value": 24, "unit": "Nm", "notes": "8.8 grade. 10.9 grade: 34 Nm. Star pattern." },
+        { "component": "Clutch slave cylinder bolts", "value": 22, "unit": "Nm", "notes": "" },
+        { "component": "Clutch master cylinder to pedal cluster", "value": 22, "unit": "Nm", "notes": "" },
+        { "component": "Clutch fluid line to master/slave cylinder", "value": 20, "unit": "Nm", "notes": "±5 Nm" },
+        { "component": "Back-up light switch to transmission", "value": 20, "unit": "Nm", "notes": "" },
+        { "component": "Transmission output shaft collar nut", "value": 190, "unit": "Nm", "notes": "Stage 1: 190 Nm, loosen, then Stage 2: 120 Nm" }
+      ]
+    },
+    {
+      "name": "Automatic Transmission",
+      "specs": [
+        { "component": "Transmission-to-engine (M12 Torx)", "value": 72, "unit": "Nm", "notes": "M10: 43 Nm, M8: 22 Nm" },
+        { "component": "Torque converter bolts (M10)", "value": 45, "unit": "Nm", "notes": "3 bolts, access through starter hole" },
+        { "component": "Transmission pan bolts", "value": 10, "unit": "Nm", "notes": "GM A5S 360R/390R. ZF A5S 325Z: 6 Nm. Do not overtighten." },
+        { "component": "ATF drain plug (ZF A5S 325Z)", "value": 35, "unit": "Nm", "notes": "GM A5S 360R/390R: 20 Nm" },
+        { "component": "Mechatronic sleeve bolts", "value": 10, "unit": "Nm", "notes": "" },
+        { "component": "Auto transmission crossmember to body", "value": 23, "unit": "Nm", "notes": "Auto trans specific (manual trans: 21 Nm)" }
+      ]
+    },
+    {
+      "name": "Front Suspension",
+      "specs": [
+        { "component": "Front strut top nut (M14)", "value": 64, "unit": "Nm", "notes": "Hold piston rod with hex key" },
+        { "component": "Front strut mount to tower (M8)", "value": 24, "unit": "Nm", "notes": "Self-locking nuts. 21mm flange: 34 Nm." },
+        { "component": "Steering arm pinch bolt at strut", "value": 81, "unit": "Nm", "notes": "" },
+        { "component": "Control arm ball joint to subframe (M14)", "value": 90, "unit": "Nm", "notes": "Self-locking nut" },
+        { "component": "Control arm ball joint to steering arm", "value": 65, "unit": "Nm", "notes": "Self-locking nut" },
+        { "component": "Control arm rear bushing bolt", "value": 59, "unit": "Nm", "notes": "Torque at ride height" },
+        { "component": "Front sway bar end link nut", "value": 59, "unit": "Nm", "notes": "" },
+        { "component": "Front sway bar bracket bolts (M8)", "value": 22, "unit": "Nm", "notes": "" },
+        { "component": "Front wheel bearing collar nut", "value": 290, "unit": "Nm", "notes": "Stake nut after tightening. Replace nut." },
+        { "component": "Front subframe to body (M12, 8.8)", "value": 77, "unit": "Nm", "notes": "10.9 grade: 110 Nm. 12.9 grade: 105 Nm." },
+        { "component": "Brake caliper to steering arm", "value": 110, "unit": "Nm", "notes": "" }
+      ]
+    },
+    {
+      "name": "Rear Suspension",
+      "specs": [
+        { "component": "Rear shock piston rod nut", "value": 14, "unit": "Nm", "notes": "Mount-to-body nuts: 28 Nm" },
+        { "component": "Rear shock lower bolt", "value": 100, "unit": "Nm", "notes": "" },
+        { "component": "Rear trailing arm bolts", "value": 110, "unit": "Nm", "notes": "Torque at ride height" },
+        { "component": "Rear upper control arm to subframe (M12)", "value": 77, "unit": "Nm", "notes": "" },
+        { "component": "Rear lower control arm to subframe (M12)", "value": 110, "unit": "Nm", "notes": "" },
+        { "component": "Rear sway bar end link nut", "value": 34, "unit": "Nm", "notes": "" },
+        { "component": "Rear subframe mounting stud (M12)", "value": 90, "unit": "Nm", "notes": "" },
+        { "component": "Rear subframe to body (M12)", "value": 77, "unit": "Nm", "notes": "" },
+        { "component": "Drive axle collar nut (M24)", "value": 250, "unit": "Nm", "notes": "M27: 300 Nm" },
+        { "component": "Rear trailing arm bracket to body (M12)", "value": 77, "unit": "Nm", "notes": "" }
+      ]
+    },
+    {
+      "name": "Brakes",
+      "specs": [
+        { "component": "Front caliper carrier bolts", "value": 110, "unit": "Nm", "notes": "" },
+        { "component": "Front caliper guide pin bolts", "value": 30, "unit": "Nm", "notes": "Lubricate pins" },
+        { "component": "Rear caliper carrier bolts", "value": 65, "unit": "Nm", "notes": "" },
+        { "component": "Rear caliper guide pin bolts", "value": 30, "unit": "Nm", "notes": "Lubricate pins" },
+        { "component": "Brake disc set screws", "value": 16, "unit": "Nm", "notes": "" },
+        { "component": "Brake line banjo bolt", "value": 18, "unit": "Nm", "notes": "New copper washers. Do not overtighten." },
+        { "component": "Brake bleeder valve (7mm)", "value": 5, "unit": "Nm", "notes": "11mm bleeder: 16 Nm" },
+        { "component": "ABS sensor bolt", "value": 8, "unit": "Nm", "notes": "" }
+      ]
+    },
+    {
+      "name": "Wheels",
+      "specs": [
+        { "component": "Wheel lug bolts", "value": 120, "unit": "Nm", "notes": "Star pattern, re-torque after 100 km. Bentley manual cites 100 Nm." }
+      ]
+    },
+    {
+      "name": "Driveshaft",
+      "specs": [
+        { "component": "Flex disc bolts (M10, 8.8 grade)", "value": 48, "unit": "Nm", "notes": "10.9 grade: 60 Nm. New self-locking nuts." },
+        { "component": "Flex disc bolts (M12, 10.9 grade)", "value": 100, "unit": "Nm", "notes": "" },
+        { "component": "Center support bearing bolts", "value": 21, "unit": "Nm", "notes": "" },
+        { "component": "Driveshaft to diff flange (M10)", "value": 80, "unit": "Nm", "notes": "Varies by bolt type: Torx 83 Nm, black 100 Nm, silver 80 Nm" },
+        { "component": "Driveshaft clamping sleeve", "value": 10, "unit": "Nm", "notes": "" },
+        { "component": "Drive axle to diff flange (M10, locking teeth)", "value": 96, "unit": "Nm", "notes": "Replace bolts" },
+        { "component": "Driveshaft to diff flange (M10, compressed nut)", "value": 64, "unit": "Nm", "notes": "" }
+      ]
+    },
+    {
+      "name": "Differential",
+      "specs": [
+        { "component": "Differential fill/drain plug", "value": 70, "unit": "Nm", "notes": "Metal seal ring. With rubber O-ring: 60 Nm." },
+        { "component": "Differential to subframe front (M12)", "value": 110, "unit": "Nm", "notes": "" },
+        { "component": "Differential to subframe rear (M14)", "value": 174, "unit": "Nm", "notes": "" },
+        { "component": "Differential cover bolts (M10)", "value": 45, "unit": "Nm", "notes": "8.8 grade. 10.9 grade: 55 Nm." },
+        { "component": "Front differential fill/drain plug (AWD)", "value": 65, "unit": "Nm", "notes": "" },
+        { "component": "Front differential to oil pan (M10, AWD)", "value": 45, "unit": "Nm", "notes": "" }
+      ]
+    },
+    {
+      "name": "Steering",
+      "specs": [
+        { "component": "Steering wheel bolt", "value": 63, "unit": "Nm", "notes": "Disconnect battery first (airbag)" },
+        { "component": "Tie rod end nut", "value": 65, "unit": "Nm", "notes": "" },
+        { "component": "Tie rod jam nut", "value": 45, "unit": "Nm", "notes": "Set alignment before tightening" },
+        { "component": "Steering rack to subframe", "value": 42, "unit": "Nm", "notes": "" },
+        { "component": "Steering column to rack", "value": 22, "unit": "Nm", "notes": "" },
+        { "component": "Power steering pump bolts", "value": 22, "unit": "Nm", "notes": "" },
+        { "component": "Airbag to steering wheel screws", "value": 8, "unit": "Nm", "notes": "" },
+        { "component": "Inner tie rod to steering rack", "value": 100, "unit": "Nm", "notes": "±10 Nm" },
+        { "component": "Power steering banjo bolt (M14)", "value": 35, "unit": "Nm", "notes": "M16: 40 Nm" }
+      ]
+    },
+    {
+      "name": "Transfer Case (AWD)",
+      "specs": [
+        { "component": "Transfer case to transmission (M10)", "value": 41, "unit": "Nm", "notes": "" },
+        { "component": "Transfer case filler plug (M18)", "value": 33, "unit": "Nm", "notes": "" }
+      ]
+    }
+  ]
+}

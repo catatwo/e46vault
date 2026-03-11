@@ -1,0 +1,30 @@
+---
+title: CAN-Bus System
+description: High-speed CAN-bus communication network in the BMW E46.
+sidebar:
+  order: 1
+---
+
+The Controller Area Network (CAN-bus) is the high-speed communication backbone connecting the E46 critical control modules.
+
+## Specifications
+
+- **Speed**: 500 kbit/s
+- **Wiring**: Twisted pair (CAN-H and CAN-L)
+- **Termination**: 120-ohm resistors at each end of the bus
+
+## Connected Modules
+
+- DME (engine management)
+- EGS (automatic transmission, if equipped)
+- ABS/DSC (braking and stability)
+- IKE (instrument cluster)
+- Steering angle sensor
+
+## Diagnosis
+
+CAN-bus issues can cause multiple seemingly unrelated faults. Common causes:
+- Corroded CAN-bus connector pins
+- Chafed wiring causing short circuits
+- Failed module pulling down the bus
+- Measure resistance between CAN-H and CAN-L: should be ~60 ohms with all modules connected

@@ -1,0 +1,38 @@
+name: New Content Request
+description: Suggest new content or documentation
+title: "[Content] "
+labels: ["enhancement", "content"]
+body:
+  - type: input
+    id: section
+    attributes:
+      label: Section
+      description: Which section should this content belong to?
+      placeholder: e.g., Engine, Suspension, Common Problems
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Content Description
+      description: What topic or procedure should be documented?
+    validations:
+      required: true
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: Difficulty Level
+      options:
+        - Beginner
+        - Intermediate
+        - Advanced
+        - Expert
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Additional Details
+      description: Any specific details, part numbers, or reference materials?
+    validations:
+      required: false

@@ -1,0 +1,60 @@
+---
+import partData from '../data/part-numbers.json';
+
+interface Props {
+  category?: string;
+}
+const { category } = Astro.props;
+
+const categories = category
+  ? partData.categories.filter((c) => c.name === category)
+  : partData.categories;
+---
+<div class="table-filter">
+  <input type="text" placeholder="Filter part numbers..." id="pn-filter" />
+</div>
+
+{categories.map((cat) => (
+  <div>
+    <h4>{cat.name}</h4>
+    <table class="part-number-table" data-filterable>
+      <thead>
+        <tr>
+          <th>Part Number</th>
+          <th>Description</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        {cat.parts.map((part) => (
+          <tr>
+            <td>
+              <span class="part-number">{part.partNumber}</span>
+              {part.superseded && (
+                <div>
+                  <small class="superseded">{part.superseded}</small>
+                  <span class="superseded-arrow">→</span>
+                </div>
+              )}
+            </td>
+            <td>{part.description}</td>
+            <td>{part.notes}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+))}
+
+<script>
+  const input = document.getElementById('pn-filter') as HTMLInputElement;
+  if (input) {
+    input.addEventListener('input', () => {
+      const filter = input.value.toLowerCase();
+      document.querySelectorAll('.part-number-table tbody tr').forEach((row) => {
+        const text = (row as HTMLElement).textContent?.toLowerCase() || '';
+        (row as HTMLElement).style.display = text.includes(filter) ? '' : 'none';
+      });
+    });
+  }
+</script>

@@ -1,0 +1,35 @@
+name: Content Correction
+description: Report incorrect or outdated information
+title: "[Correction] "
+labels: ["correction", "content"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Affected Page
+      description: URL or path of the page with incorrect information
+      placeholder: e.g., /engine/vanos/overview
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Current (Incorrect) Information
+      description: What does the page currently say?
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: Correct Information
+      description: What should it say instead?
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: Where did you verify the correct information?
+      placeholder: e.g., BMW TIS, Bentley Manual p.123, realoem.com
+    validations:
+      required: true

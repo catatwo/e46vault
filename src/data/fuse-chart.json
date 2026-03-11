@@ -1,0 +1,65 @@
+{
+  "disclaimer": "Fuse positions use the simplified numbering printed on the fuse box cover. BMW's internal numbering (F1-F71+) differs. Always verify against the fuse assignment sheet inside your fuse panel cover, as equipment variations affect fuse assignments.",
+  "fuseBoxes": [
+    {
+      "name": "Glove Box Fuse Panel",
+      "location": "Above glove compartment — open glove box, twist plastic lock tabs 90°, pull panel down",
+      "fuses": [
+        { "position": "F1", "rating": "30A", "circuit": "Power windows (right side)", "color": "Green" },
+        { "position": "F2", "rating": "5A", "circuit": "Instrument cluster, steering column switch center", "color": "Tan" },
+        { "position": "F3", "rating": "5A", "circuit": "Interior lights, vanity mirrors", "color": "Tan" },
+        { "position": "F4", "rating": "5A", "circuit": "Central locking, trunk release", "color": "Tan" },
+        { "position": "F5", "rating": "10A", "circuit": "OBD-II diagnostic port, cluster, DME wake", "color": "Red" },
+        { "position": "F6", "rating": "5A", "circuit": "Rear defroster control", "color": "Tan" },
+        { "position": "F7", "rating": "30A", "circuit": "Power windows (left side)", "color": "Green" },
+        { "position": "F8", "rating": "5A", "circuit": "DME relay control", "color": "Tan" },
+        { "position": "F9", "rating": "5A", "circuit": "Light switch, LCM input", "color": "Tan" },
+        { "position": "F10", "rating": "5A", "circuit": "IKE/Kombi instrument diagnostics", "color": "Tan" },
+        { "position": "F11", "rating": "5A", "circuit": "Unused / spare", "color": "Tan" },
+        { "position": "F12", "rating": "15A", "circuit": "Auxiliary power socket (front)", "color": "Blue" },
+        { "position": "F13", "rating": "5A", "circuit": "Rain/light sensor", "color": "Tan" },
+        { "position": "F14", "rating": "10A", "circuit": "IHKA climate control panel", "color": "Red" },
+        { "position": "F15", "rating": "7.5A", "circuit": "Seat memory module", "color": "Brown" },
+        { "position": "F16", "rating": "5A", "circuit": "ABS/DSC module", "color": "Tan" },
+        { "position": "F17", "rating": "7.5A", "circuit": "SRS (airbag) module", "color": "Brown" },
+        { "position": "F18", "rating": "5A", "circuit": "Telephone module (if equipped)", "color": "Tan" },
+        { "position": "F19", "rating": "5A", "circuit": "Navigation / MID display", "color": "Tan" },
+        { "position": "F20", "rating": "20A", "circuit": "Sunroof motor", "color": "Yellow" },
+        { "position": "F21", "rating": "20A", "circuit": "Heated rear window (defroster)", "color": "Yellow" },
+        { "position": "F22", "rating": "30A", "circuit": "Convertible top motor (if equipped)", "color": "Green" },
+        { "position": "F23", "rating": "30A", "circuit": "HVAC blower motor", "color": "Green" },
+        { "position": "F24", "rating": "20A", "circuit": "Radio / navigation head unit", "color": "Yellow" },
+        { "position": "F25", "rating": "20A", "circuit": "Heated front seats", "color": "Yellow" },
+        { "position": "F26", "rating": "20A", "circuit": "Heated mirrors, washer jets", "color": "Yellow" },
+        { "position": "F27", "rating": "10A", "circuit": "Headlight cleaning system", "color": "Red" },
+        { "position": "F28", "rating": "10A", "circuit": "Radio amplifier / DSP", "color": "Red" },
+        { "position": "F29", "rating": "7.5A", "circuit": "Electrochromic mirror, compass", "color": "Brown" },
+        { "position": "F30", "rating": "5A", "circuit": "PDC (park distance control)", "color": "Tan" },
+        { "position": "F31", "rating": "5A", "circuit": "Alarm system, tilt sensor", "color": "Tan" }
+      ]
+    },
+    {
+      "name": "Engine Bay Fuse Box (E-box)",
+      "location": "Left rear of engine compartment, remove plastic cover",
+      "fuses": [
+        { "position": "F1", "rating": "30A", "circuit": "DME main relay / ignition coils (2001+)", "color": "Green" },
+        { "position": "F2", "rating": "30A", "circuit": "DME control module, fuel injectors, VANOS solenoids, idle valve", "color": "Green" },
+        { "position": "F3", "rating": "20A", "circuit": "A/C compressor relay, crank/cam sensors, MAF sensor, fuel pump relay", "color": "Yellow" },
+        { "position": "F4", "rating": "30A", "circuit": "Oxygen sensors, changeover valve", "color": "Green" },
+        { "position": "F5", "rating": "30A", "circuit": "Fuel injector relay (2001+) / unloader relay (1999-2000)", "color": "Green" }
+      ]
+    },
+    {
+      "name": "High Amperage Fuses (above glove box panel)",
+      "location": "Above main fuse panel, under access panel with retaining clips",
+      "fuses": [
+        { "position": "F101", "rating": "50A", "circuit": "Engine cooling fan (1999-2000)", "color": "Red (Maxi)" },
+        { "position": "F102", "rating": "80A", "circuit": "B+ terminal, DME main relay, ECM, TCM", "color": "Maxi" },
+        { "position": "F105", "rating": "50A", "circuit": "Ignition switch, DLC", "color": "Red (Maxi)" },
+        { "position": "F106", "rating": "50A", "circuit": "Light switching center (LCM)", "color": "Red (Maxi)" },
+        { "position": "F107", "rating": "50A", "circuit": "Light switching center (LCM), trailer module", "color": "Red (Maxi)" },
+        { "position": "F108", "rating": "200A", "circuit": "Main harness fuse (in trunk, behind trim)", "color": "Maxi" }
+      ]
+    }
+  ]
+}

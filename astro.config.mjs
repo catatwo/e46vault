@@ -6,7 +6,7 @@ import mdx from '@astrojs/mdx';
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://catatwo.github.io',
-	base: '/e46vault',
+	base: process.env.BASE_PATH || '/e46vault',
 	integrations: [
 		starlight({
 			title: 'E46 Vault',

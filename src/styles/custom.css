@@ -331,39 +331,32 @@
 
 /* ===== Mobile Responsiveness ===== */
 
-/* Ensure all content tables scroll horizontally on small screens */
-.sl-markdown-content table {
-  min-width: 100%;
+/* Scrollable table wrapper with fade hint */
+.sl-markdown-content table:not(:where(.not-content *)) {
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 @media (max-width: 30em) {
-  /* Tighter padding on all markdown tables */
-  .sl-markdown-content th,
-  .sl-markdown-content td {
-    padding: 0.4em 0.5em;
-    font-size: 0.9em;
+  /* Compact table cells */
+  .sl-markdown-content th:not(:where(.not-content *)),
+  .sl-markdown-content td:not(:where(.not-content *)),
+  .part-number-table th,
+  .part-number-table td,
+  .torque-spec-table th,
+  .torque-spec-table td,
+  .fluid-capacity-table th,
+  .fluid-capacity-table td {
+    padding: 0.35em 0.5em;
+    font-size: 0.85em;
   }
-  /* Allow part numbers and torque values to wrap on small screens */
+
+  /* Allow part numbers and torque values to wrap */
   .part-number,
   .torque-spec {
     white-space: normal;
     word-break: break-word;
-  }
-
-  /* Smaller table text and padding */
-  .part-number-table,
-  .torque-spec-table,
-  .fluid-capacity-table {
-    font-size: 0.82em;
-  }
-
-  .part-number-table th,
-  .torque-spec-table th,
-  .fluid-capacity-table th,
-  .part-number-table td,
-  .torque-spec-table td,
-  .fluid-capacity-table td {
-    padding: 0.4em 0.5em;
   }
 
   /* Filter input should not exceed viewport */

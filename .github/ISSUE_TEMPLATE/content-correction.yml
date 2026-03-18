@@ -1,7 +1,7 @@
 name: Content Correction
 description: Report incorrect or outdated information
-title: "[Correction] "
-labels: ["correction", "content"]
+title: '[Correction] '
+labels: ['correction', 'content']
 body:
   - type: input
     id: page

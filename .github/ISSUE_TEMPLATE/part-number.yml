@@ -1,7 +1,7 @@
 name: Part Number Update
 description: Submit new, corrected, or superseded part numbers
-title: "[Parts] "
-labels: ["parts", "content"]
+title: '[Parts] '
+labels: ['parts', 'content']
 body:
   - type: input
     id: component

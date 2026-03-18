@@ -1,14 +1,16 @@
 ---
 interface Props {
-  title?: string;
+	title?: string;
 }
 const { title = 'Safety Warning' } = Astro.props;
 ---
+
 <div class="warning-callout">
-  <div class="warning-callout-header">
-    <span>⚠️</span> {title}
-  </div>
-  <div class="warning-callout-body">
-    <slot />
-  </div>
+	<div class="warning-callout-header">
+		<span>⚠️</span>
+		{title}
+	</div>
+	<div class="warning-callout-body">
+		<slot />
+	</div>
 </div>

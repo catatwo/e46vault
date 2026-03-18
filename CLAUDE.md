@@ -8,14 +8,18 @@ E46 Vault is a BMW E46 330i/Ci/xi technical knowledge base built with **Astro + 
 
 ## Commands
 
-| Command | Purpose |
-|---------|---------|
-| `npm run dev` | Dev server at `localhost:4321` |
-| `npm run build` | Production build to `./dist/` (also builds Pagefind search index) |
-| `npm run preview` | Preview production build locally |
-| `npm run astro check` | TypeScript and content schema validation |
+| Command               | Purpose                                                           |
+| --------------------- | ----------------------------------------------------------------- |
+| `npm run dev`         | Dev server at `localhost:4321`                                    |
+| `npm run build`       | Production build to `./dist/` (also builds Pagefind search index) |
+| `npm run preview`     | Preview production build locally                                  |
+| `npm run astro check` | TypeScript and content schema validation                          |
+| `npm run lint`        | Run ESLint                                                        |
+| `npm run lint:fix`    | Run ESLint with auto-fix                                          |
+| `npm run format`      | Format all files with Prettier                                    |
+| `npm run format:check`| Check formatting without writing                                  |
 
-No linting or test commands are configured. The build itself validates content schema and sidebar slug correctness.
+The build validates content schema and sidebar slug correctness. ESLint + Prettier handle code quality and formatting.
 
 ## Architecture
 
@@ -29,10 +33,10 @@ No linting or test commands are configured. The build itself validates content s
 
 Three table components read from JSON data files at build time:
 
-| Component | Data File |
-|-----------|-----------|
-| `PartNumberTable.astro` | `src/data/part-numbers.json` |
-| `TorqueSpecTable.astro` | `src/data/torque-specs.json` |
+| Component                  | Data File                        |
+| -------------------------- | -------------------------------- |
+| `PartNumberTable.astro`    | `src/data/part-numbers.json`     |
+| `TorqueSpecTable.astro`    | `src/data/torque-specs.json`     |
 | `FluidCapacityTable.astro` | `src/data/fluid-capacities.json` |
 
 These table components include client-side vanilla JS for live filtering/search. The remaining 8 components (`PartNumber`, `TorqueSpec`, `FluidSpec`, `ToolList`, `DifficultyRating`, `TimeEstimate`, `WarningCallout`, `YearRange`) are inline display components that take props directly.
@@ -40,6 +44,7 @@ These table components include client-side vanilla JS for live filtering/search.
 ### Theming
 
 Two CSS files registered in `astro.config.mjs` under `customCss`:
+
 - `src/styles/custom.css` — BMW color palette (primary: `#0066b1`), Starlight token overrides (`--sl-color-accent-*`), and all component class styles
 - `src/styles/e46-theme.css` — Extended tokens for hero, procedure steps, status badges
 

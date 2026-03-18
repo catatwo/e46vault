@@ -1,13 +1,14 @@
 ---
 interface Props {
-  type: string;
-  capacity?: string;
-  spec?: string;
+	type: string;
+	capacity?: string;
+	spec?: string;
 }
 const { type, capacity, spec } = Astro.props;
 ---
+
 <span class="fluid-spec">
-  <span class="fluid-type">{type}</span>
-  {spec && <span class="fluid-specification">({spec})</span>}
-  {capacity && <span class="fluid-capacity">— {capacity}</span>}
+	<span class="fluid-type">{type}</span>
+	{spec && <span class="fluid-specification">({spec})</span>}
+	{capacity && <span class="fluid-capacity">— {capacity}</span>}
 </span>

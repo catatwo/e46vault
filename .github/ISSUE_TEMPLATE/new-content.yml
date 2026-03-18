@@ -1,7 +1,7 @@
 name: New Content Request
 description: Suggest new content or documentation
-title: "[Content] "
-labels: ["enhancement", "content"]
+title: '[Content] '
+labels: ['enhancement', 'content']
 body:
   - type: input
     id: section

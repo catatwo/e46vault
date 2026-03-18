@@ -6,64 +6,65 @@ import DefaultFooter from '@astrojs/starlight/components/Footer.astro';
 <DefaultFooter {...Astro.props}><slot /></DefaultFooter>
 
 <div class="site-footer">
-  <p class="footer-brand">E46 Vault</p>
-  <p class="footer-tagline">BMW E46 330i/Ci/xi Technical Knowledge Base</p>
-  <p class="footer-disclaimer">
-    Not affiliated with BMW AG. Information provided as-is for educational purposes.
-    Always verify critical specs against factory documentation.
-  </p>
-  <p class="footer-links">
-    <a href="https://github.com/catatwo/e46vault">GitHub</a>
-    <span class="footer-sep">&middot;</span>
-    <a href="https://github.com/catatwo/e46vault/issues">Report an Issue</a>
-    <span class="footer-sep">&middot;</span>
-    <a href="/e46vault/resources/contributing/">Contribute</a>
-  </p>
+	<p class="footer-brand">E46 Vault</p>
+	<p class="footer-tagline">BMW E46 330i/Ci/xi Technical Knowledge Base</p>
+	<p class="footer-disclaimer">
+		Not affiliated with BMW AG. Information provided as-is for educational
+		purposes. Always verify critical specs against factory documentation.
+	</p>
+	<p class="footer-links">
+		<a href="https://github.com/catatwo/e46vault">GitHub</a>
+		<span class="footer-sep">&middot;</span>
+		<a href="https://github.com/catatwo/e46vault/issues">Report an Issue</a>
+		<span class="footer-sep">&middot;</span>
+		<a href="/e46vault/resources/contributing/">Contribute</a>
+	</p>
 </div>
 
 <style>
-  .site-footer {
-    border-top: 1px solid color-mix(in srgb, var(--sl-color-text) 12%, transparent);
-    padding: 2rem 0 0;
-    margin-top: 1.5rem;
-    text-align: center;
-    font-size: 0.85em;
-    color: color-mix(in srgb, var(--sl-color-text) 60%, transparent);
-  }
+	.site-footer {
+		border-top: 1px solid
+			color-mix(in srgb, var(--sl-color-text) 12%, transparent);
+		padding: 2rem 0 0;
+		margin-top: 1.5rem;
+		text-align: center;
+		font-size: 0.85em;
+		color: color-mix(in srgb, var(--sl-color-text) 60%, transparent);
+	}
 
-  .footer-brand {
-    font-weight: 700;
-    font-size: 1.1em;
-    color: var(--sl-color-accent);
-    margin: 0 0 0.25rem;
-  }
+	.footer-brand {
+		font-weight: 700;
+		font-size: 1.1em;
+		color: var(--sl-color-accent);
+		margin: 0 0 0.25rem;
+	}
 
-  .footer-tagline {
-    margin: 0 0 1rem;
-  }
+	.footer-tagline {
+		margin: 0 0 1rem;
+	}
 
-  .footer-disclaimer {
-    margin: 0 0 1rem;
-    line-height: 1.5;
-    font-size: 0.9em;
-    opacity: 0.8;
-  }
+	.footer-disclaimer {
+		margin: 0 0 1rem;
+		line-height: 1.5;
+		font-size: 0.9em;
+		opacity: 0.8;
+	}
 
-  .footer-links {
-    margin: 0;
-  }
+	.footer-links {
+		margin: 0;
+	}
 
-  .footer-links a {
-    color: var(--sl-color-accent);
-    text-decoration: none;
-  }
+	.footer-links a {
+		color: var(--sl-color-accent);
+		text-decoration: none;
+	}
 
-  .footer-links a:hover {
-    text-decoration: underline;
-  }
+	.footer-links a:hover {
+		text-decoration: underline;
+	}
 
-  .footer-sep {
-    margin: 0 0.5rem;
-    opacity: 0.4;
-  }
+	.footer-sep {
+		margin: 0 0.5rem;
+		opacity: 0.4;
+	}
 </style>

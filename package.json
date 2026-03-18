@@ -1,18 +1,30 @@
 {
-  "name": "e46vault",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/mdx": "^4.3.13",
-    "@astrojs/starlight": "^0.37.5",
-    "astro": "^5.6.1",
-    "sharp": "^0.34.2"
-  }
+	"name": "e46vault",
+	"type": "module",
+	"version": "0.0.1",
+	"scripts": {
+		"dev": "astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"format": "prettier --write .",
+		"format:check": "prettier --check ."
+	},
+	"dependencies": {
+		"@astrojs/mdx": "^4.3.13",
+		"@astrojs/starlight": "^0.37.5",
+		"astro": "^5.6.1",
+		"sharp": "^0.34.2"
+	},
+	"devDependencies": {
+		"@eslint/js": "^10.0.1",
+		"eslint": "^10.0.3",
+		"eslint-plugin-astro": "^1.6.0",
+		"prettier": "^3.8.1",
+		"prettier-plugin-astro": "^0.14.1",
+		"typescript-eslint": "^8.57.1"
+	}
 }
